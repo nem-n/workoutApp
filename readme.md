@@ -42,7 +42,7 @@ This is a **Gym Management System** built with **Flask**, a Python web framework
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/workout-gym-flask.git
+   git clone https://github.com/nu2911/workoutApp.git
    cd workout-gym-flask
    ```
 
