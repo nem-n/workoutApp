@@ -1,0 +1,111 @@
+/* Mobile view */
+@media (max-width: 600px) {
+    .navbar {
+        height: 3rem;
+        padding: 0 1rem;
+        /* position: relative; */
+    }
+
+    /* Hide navbar links initially */
+    .navbar ul {
+        margin-top: -11px;
+        display: none; /* Hide the menu initially */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Show the navbar links when the navbar has the 'active' class */
+    .navbar.active ul {
+        display: flex; /* Show the menu when active */
+    }
+
+    /* For mobile layout, logo */
+    #logo {
+        z-index: 90;
+        position: absolute;
+        top: 10px; /* Adjust to place it where you want */
+        left: 20px; /* Adjust to center or align as needed */
+    }
+
+    #logo img {
+        height: 3.5rem;
+    }
+
+    /* Hide the nav-right section on mobile by default (Join Now) */
+    .nav-right {
+        display: none; /* Hide "Join Now" on mobile */
+    }
+
+    /* Hamburger Icon Styling */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        color: white;
+    }
+
+    /* Make navbar links stack vertically on mobile */
+    .navbar ul li {
+        margin: 1rem 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+        padding: 8px;
+        text-decoration: none;
+        color: white;
+    }
+
+    /* On active state, highlight nav item */
+    .navbar ul li a.active,
+    .navbar ul li a:hover {
+        color: black;
+        background: #ff9800;
+    }
+
+    /* Navbar layout for mobile screens */
+    .nav-left {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav-center {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Ensure nav-right is hidden on mobile when menu is not active */
+    .nav-right {
+        display: none;
+    }
+
+    /* If the navbar is toggled, display the "Join Now" button */
+    .navbar.active .nav-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+/* For small mobile screens, add extra padding adjustments */
+@media (max-width: 500px) {
+    #pricing {
+        grid-template-columns: 1fr;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}

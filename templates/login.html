@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Sign In | Workout{% endblock %}
+{% block navright %}<li><a href="{{ url_for('register') }}">Sign Up</a></li>{% endblock %}
+{% block content %}
+<img id="wwimg" src="{{ url_for('static', filename='images/wimg.png') }}" alt="image">
+<section id="contactus">
+   <h2 class="center heading h"></h2>
+<div class="cform">
+  <form>
+        <div class="center" style="padding: 10px;"><h2>Log In</h2></div>
+    <div class="mb">
+        <input type="text" class="inputf" id="" placeholder="Enter Email address or Username" required>
+    </div>
+    <div class="mb">
+      <input type="password" class="inputf" id="" placeholder="Enter Password" required>
+      <div class="ftxt"><a href="{{ url_for('forget') }}">forgot password?</a></div>
+    </div>
+    <button type="submit" class="btn-center fbtn" value="login">Log In</button>
+    <div class="ftxt center"><a href="{{ url_for('register') }}">Dont have an account?</a></div>
+  </form>
+</div>
+ </section>
+<style>
+    body{
+      overflow-y: hidden; /* Hide vertical scrollbar */
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none;
+    }
+  </style>
+{% endblock %}

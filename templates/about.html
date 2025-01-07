@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}About | Workout{% endblock %}
+{% block navright %}<li><a href="{{ url_for('register') }}">Sign up</a></li>{% endblock %}
+{% block content %}
+<h1>About Us</h1>
+ <section id="about">
+    <h2 class="center heading h" style="padding-bottom: 20px;">About Us</h2>
+    
+    <div id="about" class="mcontainer">
+        <div class="card abt">
+            <p>At <strong>Workout</strong>, we provide a motivating environment for individuals at all fitness levels. Our mission is to help you achieve your fitness goals with state-of-the-art equipment and expert trainers.
+            We believe in building a community where support and motivation drive success. Whether you’re aiming for strength, endurance, or overall well-being, we have the tools and resources to guide you every step of the way.</p>
+        </div>
+        <div class="card">
+            <h3 class="center heading2">Our Facilities</h3>
+            <p>We offer a variety of workout spaces including:</p>
+            <ul>
+                <li><strong>Cardio Equipment:</strong> A wide range of machines including treadmills, bikes, and ellipticals.</li>
+                <li><strong>Strength Training:</strong> Free weights, resistance machines, and functional training tools.</li>
+                <li><strong>Group Classes:</strong>A variety of classes such as yoga, HIIT.</li>
+                <li><strong>Relaxation Area:</strong> A comfortable space to unwind after a workout, complete with amenities for your comfort.</li>
+            </ul>
+            <h3 class="center heading2 team">Our Team</h3>
+            <p>Our expert trainers are not only certified professionals but also passionate fitness enthusiasts. They understand the challenges of each fitness journey and provide personalized guidance to help you meet your individual goals.</p>
+        </div>
+        <div id="image2" class="card imgCard"> 
+                <img src="{{ url_for('static', filename='images/fitness.webp') }}" alt="Gym Image">
+        </div>
+        <div class="card abt">
+            <p>Join us at <strong>Workout</strong> and experience what it's like to work out in an environment that prioritizes your success. We’re here to help you achieve your goals, and together, we’ll make them a reality.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

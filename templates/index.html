@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Workout Gym{% endblock %}
+{% block navright %}<li><a href="{{ url_for('login') }}">Sign In</a></li>{% endblock %}
+{% block content %}
+    <div class="hero">
+        <img id="wimg" src="{{ url_for('static', filename='images/wimg.png') }}" alt="image">
+        <div class="hero2">
+            <h1 id="h1">Achieve Your Fitness Goals!</h1>
+        </div>
+    </div>
+        <section id="home">   
+            <div class="mcontainer">
+                <div class="card">
+                    <p><h2 class="center heading2">Welcome to Our Gym</h2> We offer state-of-the-art equipment and professional trainers to help you achieve your fitness goals.</p>
+                    <p>Your fitness journey begins here. At our gym, we are committed to providing a dynamic and motivating space where individuals of all fitness levels can thrive. Whether you're looking to build strength, improve endurance, or find balance in your daily life, we have everything you need to succeed.</p>
+                    <p>From cutting-edge equipment to expert guidance, we ensure every aspect of your fitness experience is seamless and enjoyable. Explore our wide range of classes, flexible membership plans, and a community that supports your goals.</p>
+                    <p>Ready to transform your health and well-being? Take the first step today and see what makes us the right choice for your fitness journey.</p>
+                    <p>Your journey starts here—welcome to a healthier, stronger you!</p> <div id="biceps"><div class="bicep">💪'-'</div><div class="bicep flip">💪</div></div>
+                </div>
+                <div id="image1" class="card imgCard">
+                    <img src="{{ url_for('static', filename='images/img.jpg') }}" alt="Gym Image">
+                </div>
+            </div>
+        </section>
+{% endblock %}
+
+ 

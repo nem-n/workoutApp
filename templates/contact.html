@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us | Workout{% endblock %}
+{% block navright %}<li><a href="{{ url_for('login') }}">Sign Up</a></li>{% endblock %}
+
+{% block content %}
+<section id="contactus">
+   <h2 class="center heading h"></h2>
+
+<div class="cform">
+  <form>
+    <div class="center" style="padding: 10px;"><h2>Message Box</h2></div>
+    <div class="mb">
+      <!-- <label for="inputPassword" class="labelf">Password</label> -->
+      <input type="text" class="inputf" id="" placeholder="Full Name" required>
+    </div>
+    <div class="mb">
+      <!-- <label for="inputEmail" class="labelf">Email address</label> -->
+      <input type="email" class="inputf" placeholder="Email address" required>
+    </div>
+    <div class="mb">
+      <!-- <label for="inputMessage" class="labelf">Message</label> -->
+      <textarea id="message" class="inputf" name="message" rows="4" cols="30" placeholder="Message" required></textarea>
+    </div>
+    <button type="submit" class="btn-center fbtn" value="submit">Submit</button>
+  </form>
+
+</div>
+ </section>
+ <section id="contact">
+  <h2 class="heading">Get in Touch</h2>
+  <p>Contact us to learn more about our gym and membership plans.</p>
+  <ul>
+      <li><a href="https://www.google.com/maps?q=123+Fitness+Street,+Karachi,+PK" target="_blank">🗺 123 Fitness Street, Karachi, PK</a></li>
+      <li><a href="mailto:info@workout.com" target="_blank">✉ info@workout.com</a></li>
+      <li><a href="tel:123-456-7890" target="_blank">☎ 123-456-7890</a></li>
+  </ul>
+</section>
+
+
+    {% endblock %}

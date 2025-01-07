@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Workout Gym{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/1logo.png') }}" type="">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav class="navbar">
+                <div id="logo" >
+                    <a href="./"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"></a>
+                </div>
+                <ul class="nav-left"></ul>
+                <ul class="nav-center">
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('membership') }}" >Memberships</a></li>
+                    <li><a href="{{ url_for('gallery') }}" >Gallery</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                </ul>
+                <ul class="nav-right">{% block navright %}{% endblock %}</ul>
+                <div class="hamburger" onclick="toggleNavbar()">☰</div>
+            </nav>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <p> &copy;2025 Workout. All rights reserved. | <a href="https://www.linkedin.com/in/naeemuddin-nyt/">Designed by NU</a></p>
+    </footer>
+    <script>
+        function toggleNavbar() {
+            document.querySelector('.navbar').classList.toggle('active');}
+        </script>
+</body>
+</html>

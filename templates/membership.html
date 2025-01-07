@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}Membership Plans | Workout{% endblock %}
+{% block navright %}<li><a href="{{ url_for('login') }}">Sign Up</a></li>{% endblock %}
+{% block content %}
+      <section id="membership">
+        <h2 class="center heading h">Membership Plans</h2>
+        <div id="pricing" class="mcontainer">
+            <!-- Basic Plan -->
+            <div class="plan card">
+                <h2>Basic</h2>
+                <h3>PKR 2000/month</h3>
+                <p>Includes access to:</p>
+                <ul>
+                    <li>Weights</li>
+                    <li>Machines</li>
+                    <br><br><br><br><br>
+                </ul>
+                <a href="{{ url_for('register') }}" class="cta">Join Now</a> 
+            </div>
+            <div class="plan card">
+                <h2>Standard</h2>
+                <h3>PKR 3500/month</h3>
+                <p>Includes access to:</p>
+                <ul>
+                    <li>Weights</li>
+                    <li>Machines</li>
+                    <li>Locker access</li>
+                    <li>Equipment like mats and gloves</li>
+                    <br><br>
+                </ul>
+                <a href="{{ url_for('register') }}" class="cta">Join Now</a> 
+            </div>
+            <div class="plan card">
+                <h2>Premium</h2>
+                <h3>PKR 5000/month</h3>
+                <p>Includes access to:</p>
+                <ul>
+                    <li>Weights</li>
+                    <li>Machines</li>
+                    <li>Locker access</li>
+                    <li>Equipment (mats/gloves etc)</li>
+                    <li>Personal trainer </li>
+                    <li>Tailored workout plans</li>
+                </ul>
+                <a href="{{ url_for('register') }}" class="cta">Join Now</a> 
+            </div>
+            <div class="plan card elite">
+                <h2>Elite</h2>
+                <h3>PKR 8000/month</h3>
+                <p>Includes everything in Premium plus:</p>
+                <ul>
+                    <li>Group fitness classes (Yoga, HIIT, Zumba)</li>
+                    <li>Nutrition consultations</li>
+                    <li>Sauna/steam room access</li>
+                    <li>Complimentary gym merchandise</li>
+                </ul>
+                 <a href="{{ url_for('register') }}" class="cta">Join Now</a> 
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="heading">Get in Touch</h2>
+        <p>Contact us to learn more about our gym and membership plans.</p>
+        <ul>
+            <li><a href="https://www.google.com/maps?q=123+Fitness+Street,+Karachi,+PK" target="_blank">🗺 123 Fitness Street, Karachi, PK</a></li>
+            <li><a href="mailto:info@workout.com" target="_blank">✉ info@workout.com</a></li>
+            <li><a href="tel:123-456-7890" target="_blank">☎ 123-456-7890</a></li>
+        </ul>
+    </section>
+{% endblock %}
+    
