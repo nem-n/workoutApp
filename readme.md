@@ -1,6 +1,6 @@
 # Workout Gym Web Application
 
-This is a **Gym Management System** built with **Flask**, a Python web framework. The web app provides an interactive platform where users can view membership plans, learn about the gym, sign up, log in, and explore the gallery.
+This is a **Gym Management System** built with **Flask** (Front-End only), a Python web framework. The web app provides an interactive platform where users can view membership plans, learn about the gym, sign up, log in, and explore the gallery.
 
 ## Features
 
