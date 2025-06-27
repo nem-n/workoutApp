@@ -16,7 +16,6 @@ This is a **Gym Management System** built with **Flask** (Front-End only), a Pyt
 - **Flask**: Web framework used for building the application.
 - **HTML/CSS**: For creating the front-end structure and design.
 - **Jinja2**: Templating engine used to generate dynamic content.
-- **SQLite**: For database handling (if integrated later).
 
 ## Folder Structure
 
